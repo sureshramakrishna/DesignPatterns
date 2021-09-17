@@ -6,6 +6,7 @@ using DesignPatters.CreationalDesignPatterns.FactoryMethod;
 using DesignPatters.CreationalDesignPatterns.FluentInterface;
 using DesignPatters.CreationalDesignPatterns.ProtoType;
 using DesignPatters.Models;
+using DesignPatters.StructuralDesignPattern.Decorator;
 using CreditCardFactory = DesignPatters.CreationalDesignPatterns.Factory.CreditCardFactory;
 
 namespace DesignPatters
@@ -42,6 +43,9 @@ namespace DesignPatters
             Student emp = new Student {Department = "CSE", Name = "Suresh"};
             Student emp2 = emp.Clone();
 
+            //Decorator design pattern
+            DecoratorDesignPattern d = new DecoratorDesignPattern();
+            d.Demo();
             Console.ReadKey();
         }
     }
